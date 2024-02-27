@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6C2188A0-63E7-4C75-B7A2-E26665893798"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3142BEB-4524-4A5D-B483-D077FC965C83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcquireCashout/CompanyCashoutView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "calculateCompanyTotal()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D3142BEB-4524-4A5D-B483-D077FC965C83 - 9d1033fb7b2df788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcquireCashout.CompanyCashoutView.calculateCompanyTotal() -&gt; ()"
+                  moduleName = "AcquireCashout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tracehale/Documents/AcquireCashout/AcquireCashout/CompanyCashoutView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "3079">
+               </Location>
+               <Location
+                  uuid = "D3142BEB-4524-4A5D-B483-D077FC965C83 - 9d1033fb7b2df788"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcquireCashout.CompanyCashoutView.calculateCompanyTotal() -&gt; ()"
+                  moduleName = "AcquireCashout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tracehale/Documents/AcquireCashout/AcquireCashout/CompanyCashoutView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "2537">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D227EBBA-78F6-42C8-BE9A-326332A917B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcquireCashout/CompanyCashoutView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "calculateCompanyTotal()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D227EBBA-78F6-42C8-BE9A-326332A917B1 - 9d1033fb7b2df40c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcquireCashout.CompanyCashoutView.calculateCompanyTotal() -&gt; ()"
+                  moduleName = "AcquireCashout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tracehale/Documents/AcquireCashout/AcquireCashout/CompanyCashoutView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "2545">
+               </Location>
+               <Location
+                  uuid = "D227EBBA-78F6-42C8-BE9A-326332A917B1 - 9d1033fb7b2df40c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AcquireCashout.CompanyCashoutView.calculateCompanyTotal() -&gt; ()"
+                  moduleName = "AcquireCashout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tracehale/Documents/AcquireCashout/AcquireCashout/CompanyCashoutView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "1947">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88BDC974-C1B2-41D1-81DD-98865EE3F080"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcquireCashout/CompanyCashoutView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "roundToHundreds(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8070471B-65FF-4F8B-86E8-8AB1D94FB7DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcquireCashout/CompanyCashoutView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "roundToHundreds(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
