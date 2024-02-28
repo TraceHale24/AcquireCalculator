@@ -11,6 +11,8 @@ struct ContentView: View {
 
     @State private var inputValue: String = ""
     @State private var isValidNumber: Bool = true
+    @State private var classicMode: Bool = true
+
     
     @State private var total: Int = 0
 
@@ -21,6 +23,8 @@ struct ContentView: View {
                     .font(.title)
                 HStack {
                     Text("Cash:")
+                        .font(.title2)
+                    
                     TextField("Enter number", text: $inputValue)
                         .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -31,13 +35,21 @@ struct ContentView: View {
                 }
                 .padding(.horizontal, 15)
                 
+                HStack {
+                    Toggle("Classic Mode", isOn: $classicMode)
+                }
+                .toggleStyle(.automatic)
+                .padding(.horizontal, 15)
+                .font(.title2)
+                
+                
                 if !isValidNumber {
                     Text("Please enter a valid whole number")
                         .foregroundColor(.red)
                         .padding(.bottom, 8)
                 }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $sacksonTotal, companyName: .constant("Sackson"), companyTier: .constant(0))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $sacksonTotal, companyName: .constant("Sackson"), companyTier: .constant(0), classicMode: .constant(classicMode))) {
                     Text("Sackson Cashout")
                         .font(.title)
                 }
@@ -46,7 +58,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $towerTotal, companyName: .constant("Tower"), companyTier: .constant(0))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $towerTotal, companyName: .constant("Tower"), companyTier: .constant(0), classicMode: .constant(classicMode))) {
                     Text("Tower Cashout")
                         .font(.title)
                 }
@@ -55,7 +67,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $festivalTotal, companyName: .constant("Festival"), companyTier: .constant(1))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $festivalTotal, companyName: .constant("Festival"), companyTier: .constant(1), classicMode: .constant(classicMode))) {
                     Text("Festival Cashout")
                         .font(.title)
                 }
@@ -64,7 +76,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $worldwideTotal, companyName: .constant("Worldwide"), companyTier: .constant(1))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $worldwideTotal, companyName: .constant("Worldwide"), companyTier: .constant(1), classicMode: .constant(classicMode))) {
                     Text("Worldwide Cashout")
                         .font(.title)
                 }
@@ -73,7 +85,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $americanTotal, companyName: .constant("American"), companyTier: .constant(1))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $americanTotal, companyName: .constant("American"), companyTier: .constant(1), classicMode: .constant(classicMode))) {
                     Text("American Cashout")
                         .font(.title)
                 }
@@ -82,7 +94,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $continentalTotal, companyName: .constant("Continental"), companyTier: .constant(2))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $continentalTotal, companyName: .constant("Continental"), companyTier: .constant(2), classicMode: .constant(classicMode))) {
                     Text("Continental Cashout")
                         .font(.title)
                 }
@@ -91,7 +103,7 @@ struct ContentView: View {
                         calculateGrandTotal()
                     }
                 
-                NavigationLink(destination: CompanyCashoutView(totalMoney: $imperialTotal, companyName: .constant("Imperial"), companyTier: .constant(2))) {
+                NavigationLink(destination: CompanyCashoutView(totalMoney: $imperialTotal, companyName: .constant("Imperial"), companyTier: .constant(2), classicMode: .constant(classicMode))) {
                     Text("Imperial Cashout")
                         .font(.title)
                 }

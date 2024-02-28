@@ -22,6 +22,7 @@ struct CompanyCashoutView: View {
     @Binding var totalMoney: Int
     @Binding var companyName: String
     @Binding var companyTier: Int
+    @Binding var classicMode: Bool
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -51,7 +52,9 @@ struct CompanyCashoutView: View {
                             Text("None").tag(0)
                             Text("1st").tag(1)
                             Text("2nd").tag(2)
-                            Text("3rd").tag(3)
+                            if (!classicMode) {
+                                Text("3rd").tag(3)
+                            }
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .padding(.bottom, 10)
@@ -99,7 +102,7 @@ struct CompanyCashoutView: View {
                     
 
                     Button {
-                        totalMoney = calculateCompanyTotal()
+                        totalMoney = classicMode ? calculateCompanyTotalClassic() : calculateCompanyTotalTycoon()
                     } label: {
                         Text("Calculate Total For \(companyName)")
                             .frame(width:200, height:50)
@@ -127,7 +130,50 @@ struct CompanyCashoutView: View {
             Spacer()
         }
     }
-    func calculateCompanyTotal() -> Int {
+    
+    func calculateCompanyTotalClassic() -> Int {
+        var total = 0
+        var sizeTierValue = 0
+        for sizeTier in allCompanyTiers {
+            if (Int(companyStock) != 0 && Int(companySize) ?? 0 >= sizeTier.minSize && Int(companySize) ?? 0 <= sizeTier.maxSize)
+            {
+                sizeTierValue = sizeTier.tier
+                total += stockCost.cost[sizeTierValue + companyTier] * (Int(companyStock) ?? 0)
+                break
+            }
+        }
+        
+        //Bonus
+        if (placementOption == 1) {
+            if (tiedOption == 1) {
+                total += allTycoonMergerPayouts[sizeTierValue + companyTier].primary
+            }
+            else {
+                if (tiedWithOption == 0) {
+                    let tempTotal = allTycoonMergerPayouts[sizeTierValue + companyTier].primary + allTycoonMergerPayouts[sizeTierValue + companyTier].secondary
+                    total += roundToHundreds(tempTotal / 2)
+                }
+                else if (tiedWithOption >= 1) {
+                    let tempTotal = allTycoonMergerPayouts[sizeTierValue + companyTier].primary + allTycoonMergerPayouts[sizeTierValue + companyTier].secondary
+                    total += roundToHundreds(tempTotal / (tiedWithOption + 1))
+                }
+            }
+        }
+        else if (placementOption == 2) {
+            if (tiedOption == 1) {
+                total += allTycoonMergerPayouts[sizeTierValue + companyTier].secondary
+            }
+            else {
+                let tempTotal = allTycoonMergerPayouts[sizeTierValue + companyTier].secondary
+                total += roundToHundreds(tempTotal / (tiedWithOption + 1))
+            }
+        }
+        
+        total += Int(companyBonus) ?? 0
+        return total
+    }
+    
+    func calculateCompanyTotalTycoon() -> Int {
         var total = 0
         var sizeTierValue = 0
         for sizeTier in allCompanyTiers {
@@ -194,5 +240,5 @@ struct CompanyCashoutView: View {
 }
 
 #Preview {
-    CompanyCashoutView(totalMoney: .constant(0), companyName: .constant("Sackson"), companyTier: .constant(1))
+    CompanyCashoutView(totalMoney: .constant(0), companyName: .constant("Sackson"), companyTier: .constant(1), classicMode: .constant(false))
 }

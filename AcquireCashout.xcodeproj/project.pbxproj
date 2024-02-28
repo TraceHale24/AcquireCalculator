@@ -13,7 +13,6 @@
 		227231592B8AF98B008F199C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 227231582B8AF98B008F199C /* Preview Assets.xcassets */; };
 		227231602B8AF9D7008F199C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2272315F2B8AF9D7008F199C /* Models.swift */; };
 		227231682B8B029B008F199C /* CompanyCashoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227231672B8B029B008F199C /* CompanyCashoutView.swift */; };
-		2272316A2B8C0758008F199C /* acquireimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 227231692B8C0758008F199C /* acquireimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		227231582B8AF98B008F199C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2272315F2B8AF9D7008F199C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		227231672B8B029B008F199C /* CompanyCashoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCashoutView.swift; sourceTree = "<group>"; };
-		227231692B8C0758008F199C /* acquireimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = acquireimage.png; path = ../../../Downloads/acquireimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				227231572B8AF98B008F199C /* Preview Content */,
 				2272315F2B8AF9D7008F199C /* Models.swift */,
 				227231672B8B029B008F199C /* CompanyCashoutView.swift */,
-				227231692B8C0758008F199C /* acquireimage.png */,
 			);
 			path = AcquireCashout;
 			sourceTree = "<group>";
@@ -136,7 +133,6 @@
 			files = (
 				227231592B8AF98B008F199C /* Preview Assets.xcassets in Resources */,
 				227231562B8AF98B008F199C /* Assets.xcassets in Resources */,
-				2272316A2B8C0758008F199C /* acquireimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +278,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AcquireCashout/Preview Content\"";
 				DEVELOPMENT_TEAM = ZA9J97UUYD;
 				ENABLE_PREVIEWS = YES;
@@ -316,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"AcquireCashout/Preview Content\"";
 				DEVELOPMENT_TEAM = ZA9J97UUYD;
 				ENABLE_PREVIEWS = YES;

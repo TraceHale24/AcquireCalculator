@@ -14,9 +14,9 @@
             filePath = "AcquireCashout/CompanyCashoutView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
-            landmarkName = "calculateCompanyTotal()"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "calculateCompanyTotalTycoon()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -62,10 +62,10 @@
             filePath = "AcquireCashout/CompanyCashoutView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "calculateCompanyTotal()"
-            landmarkType = "7">
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "calculateCompanyTotalTycoon()"
+            landmarkType = "9">
             <Locations>
                <Location
                   uuid = "D227EBBA-78F6-42C8-BE9A-326332A917B1 - 9d1033fb7b2df40c"
@@ -110,8 +110,8 @@
             filePath = "AcquireCashout/CompanyCashoutView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "roundToHundreds(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "AcquireCashout/CompanyCashoutView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "roundToHundreds(_:)"
             landmarkType = "7">
          </BreakpointContent>
