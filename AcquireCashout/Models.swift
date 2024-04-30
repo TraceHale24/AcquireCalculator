@@ -29,6 +29,42 @@ struct StockCost {
     var cost: [Int]
 }
 
+struct PlayerGameData: Codable, Equatable {
+    var name: String
+    var username: String
+    var towerStock: Int
+    var sacksonStock: Int
+    var festivalStock: Int
+    var worldwideStock: Int
+    var americanStock: Int
+    var continentalStock: Int
+    var imperialStock: Int
+    var cash: Int
+    var placement: Int?
+}
+
+struct GameStructure: Codable, Equatable {
+    var name: String
+    var gameName: String
+    var owner: String
+    var passcode: String
+    var turnPlayerId: String
+    var players: [PlayerGameData]
+    var companySizes: [String: Int]
+    var turnOrder: [Int: String]
+    var stockRemaining: [String: Int]
+    var gameOver: Bool
+}
+
+struct PlayerStructure: Codable, Equatable {
+    var name: String
+    var username: String
+    var games: [String]
+    var wins: Int
+    var losses: Int
+}
+
+
 var allCompanyTiers = [
     CompanyTierMinAndMaxSize(tier: 0, minSize: 2, maxSize: 2),
     CompanyTierMinAndMaxSize(tier: 1, minSize: 3, maxSize: 3),
@@ -90,3 +126,5 @@ var stockCost = StockCost(cost: [
     1100,
     1200
 ])
+
+
